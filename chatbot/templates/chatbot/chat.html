@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Enovia Chat Bot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  
+  <link rel="stylesheet" href="{% static 'chatbot/css/chat/fontawesome-all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'chatbot/css/chat/style.css' %}">
+
+  
+</head>
+
+<body>
+
+  <div class="floating-chat">
+    <i class="fa fa-comments" aria-hidden="true"></i>
+    <div class="chat">
+        <div class="header">
+            <span class="title">
+                Enovia Support Bot
+            </span>
+            <button>
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+                         
+        </div>
+        <ul class="messages">
+            <li class="other">Hi! I am Enovia Support Bot. I am here to help! :)</li>
+
+        </ul>
+        <div class="footer">
+            <div class="text-box" contenteditable="true" disabled="true"></div>
+            <button id="sendMessage">send</button>
+        </div>
+    </div>
+</div>
+  <script src="{% static 'chatbot/js/jquery.min.js' %}"></script>
+  <script src="{% static 'chatbot/js/chat/index.js' %}"></script>
+</body>
+
+</html>

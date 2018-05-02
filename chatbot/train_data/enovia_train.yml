@@ -1,0 +1,53 @@
+categories:
+- Enovia
+conversations:
+- - what is Enovia
+  - Enovia is a PLM software from Dassult Systems
+- - you know what is Dassult Systems
+  - Dassult Systems is a multinational software company which deals with CATIA, SIMULIA, Enovia etc. softwares
+- - have you seen Enovia software
+  - sure i have seen
+- - I am facing an issue
+  - I will try my best to priovide you a solution
+  - Please, tell me. I am here to help!
+- - I am not able to search 
+  - Are you having proper role for the search operation ?
+- - I am not able to check out a file
+  - Please check if the file is not locked by other user.
+- - how to create a new document object
+  - Go to Actions -> create. Choose the type and template and clic on Done.
+- - what is the search engine used
+  - Enovia is using exalead search
+- - Document is not showing in search result
+  - If the document is created recently then it will take some time to get indexed. After the indexing is done, you will be able to search.
+- - I am not able to login
+  - Please check your credentials and if the problem persists then create a ticket with the support team. 
+- - How to download a file 
+  - Open the object in Enovia and go to files and attachment section. From there click on the download icon beside the file you want to download.
+- - How to check the approvers
+  - Open the object in Enovia and go to Approvals section. You should be able to view the current approvers for the object.
+- - I do not have access to the document object
+  - Please get in touch with Site Super User as you need to have proper roles to view a document
+- - can I upload files over 25MB 
+  - You can upload upto 50MB per file.
+- - how to check the owner of a document object
+  - Open the object in Enovia and in the properties page of the object you will see the owner name.
+- - what is the released date of the document object
+  - Open the object in Enovia and open the properties page. There you will see the released date of the object.
+- - what is a document in Enovia
+  - In enovia document is a type of object that can be managed in Enovia system.
+- - How to edit the document in Released state
+  - A document released in Enovia should not be changed. It is a compliance issue.
+- - how to add additional approvers to a document
+  - When promoting to 'Approval' state you will be prompted to select the approvers. You can add ad-hoc approers there.
+- - how to add ad-hoc approvers for review
+  - Once the route is created, open the route and then add a task and assign role or person to approve the task.
+- - can I delete a document in enovia
+  - you can delete if the document is in initial state.
+- - can you create a document for me
+  - I am a bot. I can guide you to do that.
+- - delete a file from document
+  - you can delete a file if it is not locked by other user.
+- - unable to delete a document
+  - make sure you have proper access and the document is in initial state
+

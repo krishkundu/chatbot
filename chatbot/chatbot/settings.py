@@ -125,7 +125,9 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
     
 ]
-
+#Cherrypy server settings
+STATIC_ROOT_DIR = os.path.join(BASE_DIR, "static")
+#STATIC_ROOT_DIR = os.path.join(BASE_DIR, "static")
 #Rest framework setting for JSON parsing
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': (
