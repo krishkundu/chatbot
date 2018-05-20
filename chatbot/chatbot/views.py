@@ -25,12 +25,17 @@ def chat_api(request):
         body_unicode = request.body.decode('utf-8')
         get_value= json.loads(body_unicode)
         print(get_value)
+        if not request.session.session_key:
+            print("Creating session Key")
+            request.session.create()
+        conv_id = request.session.session_key
+        print(conv_id)
         request_message = get_value['req_msg']
         print(request_message)
         # Do your logic here coz you got data in `get_value`
         data = {}
         data['result'] = 'SUCCESS'
-        data['response'] = str(bot.generate_response(request_message))
+        data['response'] = json.dumps(bot.handle_request(request_message, sender_id=conv_id))
         return HttpResponse(json.dumps(data), content_type="application/json")
   
     print('chat received');

@@ -1,0 +1,25 @@
+{
+  "features": [
+    "intent_intent_greet",
+    "intent_intent_bye",
+    "intent_intent_user_issue",
+    "intent_intent_affirm",
+    "intent_intent_thanks",
+    "entity_actiontype",
+    "entity_username",
+    "slot_actiontype_0",
+    "slot_actiontype_1",
+    "slot_username_0",
+    "prev_action_listen",
+    "prev_action_restart",
+    "prev_utter_greet",
+    "prev_utter_goodbye",
+    "prev_action_on_user",
+    "prev_utter_ask_username",
+    "prev_utter_ask_actiontype",
+    "prev_utter_ask_confirm",
+    "prev_utter_on_it",
+    "prev_utter_ask_more_info",
+    "prev_utter_thanks"
+  ]
+}

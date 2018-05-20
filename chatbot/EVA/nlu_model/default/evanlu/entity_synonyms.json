@@ -1,0 +1,21 @@
+{
+  "enable" : "activate",
+  "off" : "deactivate",
+  "disable" : "deactivate",
+  "on" : "activate",
+  "grant" : "activate",
+  "activated" : "activate",
+  "switch off" : "deactivate",
+  "deactivated" : "deactivate",
+  "deactivate " : "deactivate",
+  "activating" : "activate",
+  "activate" : "activate",
+  "add" : "activate",
+  "disable" : "disable",
+  "give" : "activate",
+  "turn off" : "deactivate",
+  "revoke" : "deactivate",
+  "turn on" : "activate",
+  "remove": "deactivate",
+  "switch on" : "activate"
+}

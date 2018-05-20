@@ -2,6 +2,7 @@ from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
 from chatterbot.trainers import ChatterBotCorpusTrainer
 
+from eva_core import Eva
 
 conversation = [
 "Hello",
@@ -121,9 +122,9 @@ class ModelChatBot:
 		return self.__bot.get_response(request)
 		pass
 
-plm_chat_bot = ModelChatBot('PLM BOT')
-
-def get_chat_resonse(re_txt):
-	plm_chat_bot.generate_response(re_txt)
+#plm_chat_bot = ModelChatBot('PLM BOT')
+plm_chat_bot = Eva()
+def get_chat_resonse(re_txt,id):
+	plm_chat_bot.handle_request(re_txt, sender_id=id)
 
 

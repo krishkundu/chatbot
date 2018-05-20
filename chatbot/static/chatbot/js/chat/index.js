@@ -93,17 +93,44 @@ function fire_ajax_submit_chat(chatText) {
         cache: false,
         timeout: 600000,
         success: function (data) {
-
-            console.log("SUCCESS : ", data.result);
+        	console.log("SUCCESS : ", data.result);
+            console.log("SUCCESS : ", data.response);
             //insertChat('you',data.response,d.getTime());
             var userInput = $('.text-box');
             var messagesContainer = $('.messages');
-            messagesContainer.append([
-                '<li class="other">',
-                data.response,
-                '</li>'
-            ].join(''));
-
+            
+            var resp_arr = JSON.parse(data.response);
+            
+            
+            for(b in resp_arr){
+            	
+            	console.log(">>>>>>>>"+resp_arr[b]);
+            	console.log(">>>>>>>>"+b);
+            }
+            //delay_bot_response();
+            //setTimeout(display_response(resp_arr),5000);
+        	//bot response
+        	
+        	for(a in resp_arr){
+        		var txt = resp_arr[a];
+        		console.log(">>>>>>>>Text1 "+txt);
+        		console.log(">>>>>>>>a "+a);
+        		if(a == 0){
+        			console.log(">>>>>>>>a==0");
+        			//display_response(txt);
+        			console.log(">>>>>>>>display response");
+        			doSetTimeout(txt, a+1)
+   			
+        		} else {
+        			console.log(">>>>>>>>a!=0");
+        			doSetTimeout(txt, a+2)
+        			console.log(">>>>>>>>a!=0 delay"+txt);
+        			
+        		}
+        	}
+        	//delete_delay()
+          	
+            
             // clean out old message
             userInput.html('');
             // focus on input
@@ -112,17 +139,51 @@ function fire_ajax_submit_chat(chatText) {
             messagesContainer.finish().animate({
                 scrollTop: messagesContainer.prop("scrollHeight")
             }, 250);
-
-            
         },
         error: function (e) {
-
             alert("Please check username and password and try again.");
-            
         }
     });
 }
 
+function doSetTimeout(i,j) {
+	  delay_bot_response();
+	  setTimeout(function() { 
+		  display_response(i);
+			delete_delay();
+
+	  }, 2000*j);
+}
+
+function delete_delay(){
+	$("#rmv_li").remove();
+}
+
+function delayed_resp(txt){
+	delay_bot_response();
+	setTimeout(display_response(txt),4000);
+}
+
+function display_response(resp) {
+	var messagesContainer = $('.messages');
+	console.log("display_response "+resp);
+	messagesContainer.append([
+        '<li class="other">',
+        resp,
+        '</li>'
+    ].join(''));
+}
+
+function delay_bot_response(){
+	
+	
+	var messagesContainer = $('.messages');
+		messagesContainer.append([
+        '<li class="other" id="rmv_li">',
+        '<div class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>',
+        '</li>'
+    ].join(''));
+}
 
 
 function sendNewMessage() {

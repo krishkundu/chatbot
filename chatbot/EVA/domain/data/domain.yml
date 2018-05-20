@@ -1,0 +1,53 @@
+slots:
+  actiontype:
+    type: categorical
+    values:
+      - activate
+      - deactivate
+  username:
+    type: text
+
+intents:
+  - intent_greet
+  - intent_bye
+  - intent_user_issue
+  - intent_affirm
+  - intent_thanks
+
+entities:
+- actiontype
+- username
+
+actions:
+- utter_greet
+- utter_goodbye
+- eva_actions.ActionOnUser
+- utter_ask_username
+- utter_ask_actiontype
+- utter_ask_confirm
+- utter_on_it
+- utter_ask_more_info
+- utter_thanks
+
+templates:
+  utter_greet:
+    - "Hello! How can I help you ?"
+  utter_goodbye:
+    - "see you later! bye!"
+  utter_ask_username:
+    - "Can you give me the id please!"
+    - "Can you give me the id to be {actiontype} ?"
+  utter_ask_actiontype:
+    - "Please tell me the action to do with {username}?"
+  utter_ask_confirm:
+    - "The user {username} will be {actiontype}.<br/> Please confirm."
+    - "Are you sure {username} needs {actiontype} ?"
+  utter_on_it: 
+    - "I'm on it"
+  utter_thanks:
+    - "I am happy to help! :)"
+    - "Thnak You! :)"
+  utter_ask_more_info:
+    - "Can you please give me some more information ?"
+  utter_default:
+    - "sorry! But I can't get you. Can you please re-phrase and try again ?"

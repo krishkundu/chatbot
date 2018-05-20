@@ -1,0 +1,990 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "hello there",
+        "intent": "intent_greet",
+        "entities": []
+      },
+      {
+        "text": "hello",
+        "intent": "intent_greet",
+        "entities": []
+      },
+      {
+        "text": "hiee",
+        "intent": "intent_greet",
+        "entities": []
+      },
+      {
+        "text": "greetings",
+        "intent": "intent_greet",
+        "entities": []
+      },
+      {
+        "text": "hey there",
+        "intent": "intent_greet",
+        "entities": []
+      },
+      {
+        "text": "Hey man",
+        "intent": "intent_greet",
+        "entities": []
+      },
+      {
+        "text": "Howdy",
+        "intent": "intent_greet",
+        "entities": []
+      },
+      {
+        "text": "Sup",
+        "intent": "intent_greet",
+        "entities": []
+      },
+      {
+        "text": "Whazzup",
+        "intent": "intent_greet",
+        "entities": []
+      },
+      {
+        "text": "Hiya",
+        "intent": "intent_greet",
+        "entities": []
+      },
+      {
+        "text": "whats up",
+        "intent": "intent_greet",
+        "entities": []
+      },
+      {
+        "text": "hey buddy",
+        "intent": "intent_greet",
+        "entities": []
+      },
+      {
+        "text": "Good bye",
+        "intent": "intent_bye",
+        "entities": []
+      },
+      {
+        "text": "bbye",
+        "intent": "intent_bye",
+        "entities": []
+      },
+      {
+        "text": "Farewell",
+        "intent": "intent_bye",
+        "entities": []
+      },
+      {
+        "text": "see you later",
+        "intent": "intent_bye",
+        "entities": []
+      },
+      {
+        "text": "talk to you later",
+        "intent": "intent_bye",
+        "entities": []
+      },
+      {
+        "text": "byeeee",
+        "intent": "intent_bye",
+        "entities": []
+      },
+      {
+        "text": "bye",
+        "intent": "intent_bye",
+        "entities": []
+      },
+      {
+        "text": "Bye bye",
+        "intent": "intent_bye",
+        "entities": []
+      },
+      {
+        "text": "Later",
+        "intent": "intent_bye",
+        "entities": []
+      },
+      {
+        "text": "Catch you later",
+        "intent": "intent_bye",
+        "entities": []
+      },
+      {
+        "text": "Smell you later",
+        "intent": "intent_bye",
+        "entities": []
+      },
+      {
+        "text": "Adios",
+        "intent": "intent_bye",
+        "entities": []
+      },
+      {
+        "text": "Sayonara",
+        "intent": "intent_bye",
+        "entities": []
+      },
+      {
+        "text": "Please activate user 643004606",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 7,
+            "end": 16,
+            "value": "activate",
+            "entity": "actiontype"
+          },
+          {
+            "start": 21,
+            "end": 30,
+            "value": "643004606",
+            "entity": "username"
+          }
+        ]
+      },
+      {
+        "text": "I need to activate the user 643669",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 10,
+            "end": 19,
+            "value": "activate",
+            "entity": "actiontype"
+          },
+          {
+            "start": 28,
+            "end": 34,
+            "value": "643669",
+            "entity": "username"
+          }
+        ]
+      },
+      {
+        "text": "can you deactivate the user rosi maria. Her wwid is 123119",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 8,
+            "end": 19,
+            "value": "deactivate",
+            "entity": "actiontype"
+          },
+          {
+            "start": 52,
+            "end": 58,
+            "value": "123119",
+            "entity": "username"
+          }
+        ]
+      },
+      {
+        "text": "can you disable the user sajnjay khosla",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "disable",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "need to activate wwid 88383839",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "activate",
+            "entity": "actiontype"
+          },
+          {
+            "start": 22,
+            "end": 30,
+            "value": "88383839",
+            "entity": "username"
+          }
+        ]
+      },
+      {
+        "text": "can you activate paula sandro please",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "activate",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "her id is 854006659",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 10,
+            "end": 19,
+            "value": "854006659",
+            "entity": "username"
+          }
+        ]
+      },
+      {
+        "text": "sanjay rathor wwid 5678990 needs to be activated again",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 19,
+            "end": 26,
+            "value": "5678990",
+            "entity": "username"
+          },
+          {
+            "start": 39,
+            "end": 48,
+            "value": "activated",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "98556687 needs to be deactivated",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "98556687",
+            "entity": "username"
+          },
+          {
+            "start": 21,
+            "end": 32,
+            "value": "deactivated",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "i need to disable the user 4030394",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 10,
+            "end": 17,
+            "value": "disable",
+            "entity": "actiontype"
+          },
+          {
+            "start": 27,
+            "end": 34,
+            "value": "4030394",
+            "entity": "username"
+          }
+        ]
+      },
+      {
+        "text": "can you please enable user 829393903 in the application",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 27,
+            "end": 36,
+            "value": "829393903",
+            "entity": "username"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "value": "enable",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "can you please activate a user for me",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "activate",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "please activate sam",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "activate",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "643004606",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "643004606",
+            "entity": "username"
+          }
+        ]
+      },
+      {
+        "text": "it is 46002569",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 6,
+            "end": 14,
+            "value": "46002569",
+            "entity": "username"
+          }
+        ]
+      },
+      {
+        "text": "can you deactivate the user 92929922",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 28,
+            "end": 36,
+            "value": "92929922",
+            "entity": "username"
+          },
+          {
+            "start": 8,
+            "end": 18,
+            "value": "deactivate",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "please activate 9299384",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 16,
+            "end": 23,
+            "value": "9299384",
+            "entity": "username"
+          },
+          {
+            "start": 7,
+            "end": 15,
+            "value": "activate",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "deactivate sam bonks user id 76659392",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 29,
+            "end": 37,
+            "value": "76659392",
+            "entity": "username"
+          },
+          {
+            "start": 0,
+            "end": 10,
+            "value": "deactivate",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "please enable user 929834",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 19,
+            "end": 25,
+            "value": "929834",
+            "entity": "username"
+          },
+          {
+            "start": 7,
+            "end": 13,
+            "value": "enable",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "please enable access for 98577373",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 25,
+            "end": 33,
+            "value": "98577373",
+            "entity": "username"
+          },
+          {
+            "start": 7,
+            "end": 13,
+            "value": "enable",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "please disable martha lao 837478822",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 26,
+            "end": 35,
+            "value": "837478822",
+            "entity": "username"
+          },
+          {
+            "start": 7,
+            "end": 14,
+            "value": "disable",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "hello buddy",
+        "intent": "intent_greet",
+        "entities": []
+      },
+      {
+        "text": "yes",
+        "intent": "intent_affirm",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "intent_affirm",
+        "entities": []
+      },
+      {
+        "text": "go ahead.",
+        "intent": "intent_affirm",
+        "entities": []
+      },
+      {
+        "text": "exactly",
+        "intent": "intent_affirm",
+        "entities": []
+      },
+      {
+        "text": "yup",
+        "intent": "intent_affirm",
+        "entities": []
+      },
+      {
+        "text": "yes please",
+        "intent": "intent_affirm",
+        "entities": []
+      },
+      {
+        "text": "sounds good",
+        "intent": "intent_affirm",
+        "entities": []
+      },
+      {
+        "text": "that's it",
+        "intent": "intent_affirm",
+        "entities": []
+      },
+      {
+        "text": "that is exactly what i want",
+        "intent": "intent_affirm",
+        "entities": []
+      },
+      {
+        "text": "yes that is correct",
+        "intent": "intent_affirm",
+        "entities": []
+      },
+      {
+        "text": "correct",
+        "intent": "intent_affirm",
+        "entities": []
+      },
+      {
+        "text": "that is correct",
+        "intent": "intent_affirm",
+        "entities": []
+      },
+      {
+        "text": "that's true",
+        "intent": "intent_affirm",
+        "entities": []
+      },
+      {
+        "text": "true",
+        "intent": "intent_affirm",
+        "entities": []
+      },
+      {
+        "text": "please activate user 74648393",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "activate",
+            "entity": "actiontype"
+          },
+          {
+            "start": 21,
+            "end": 29,
+            "value": "74648393",
+            "entity": "username"
+          }
+        ]
+      },
+      {
+        "text": "6584223 needs access to application",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "6584223",
+            "entity": "username"
+          }
+        ]
+      },
+      {
+        "text": "access needs to be revoked for 658996",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 31,
+            "end": 37,
+            "value": "658996",
+            "entity": "username"
+          },
+          {
+            "start": 19,
+            "end": 26,
+            "value": "revoked",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "please revoke access for 4552369",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 25,
+            "end": 32,
+            "value": "4552369",
+            "entity": "username"
+          },
+          {
+            "start": 7,
+            "end": 13,
+            "value": "revoke",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "please grant access for 8238290",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 24,
+            "end": 31,
+            "value": "8238290",
+            "entity": "username"
+          },
+          {
+            "start": 7,
+            "end": 12,
+            "value": "grant",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "please enable altaf 973723782",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 20,
+            "end": 29,
+            "value": "973723782",
+            "entity": "username"
+          },
+          {
+            "start": 7,
+            "end": 13,
+            "value": "enable",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "remove access for 92389489",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 18,
+            "end": 26,
+            "value": "92389489",
+            "entity": "username"
+          },
+          {
+            "start": 0,
+            "end": 6,
+            "value": "remove",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "add access for 290200",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 15,
+            "end": 21,
+            "value": "290200",
+            "entity": "username"
+          },
+          {
+            "start": 0,
+            "end": 3,
+            "value": "add",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "give access to user 20389434",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 20,
+            "end": 28,
+            "value": "20389434",
+            "entity": "username"
+          },
+          {
+            "start": 0,
+            "end": 4,
+            "value": "give",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "need to add access to 9393939",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 22,
+            "end": 29,
+            "value": "9393939",
+            "entity": "username"
+          },
+          {
+            "start": 8,
+            "end": 11,
+            "value": "add",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "I need to provide access to 2903484",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 28,
+            "end": 35,
+            "value": "2903484",
+            "entity": "username"
+          },
+          {
+            "start": 10,
+            "end": 17,
+            "value": "provide",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "please grant access to ramos dante(7838832)",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 35,
+            "end": 42,
+            "value": "7838832",
+            "entity": "username"
+          },
+          {
+            "start": 7,
+            "end": 12,
+            "value": "grant",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "can you give access to 778282 ? he is not able to login",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 23,
+            "end": 29,
+            "value": "778282",
+            "entity": "username"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "value": "give",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "please provide login for 7262672. he is facing issue",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 25,
+            "end": 32,
+            "value": "7262672",
+            "entity": "username"
+          },
+          {
+            "start": 7,
+            "end": 14,
+            "value": "provide",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "please continue",
+        "intent": "intent_affirm",
+        "entities": []
+      },
+      {
+        "text": "can you help me with a user access",
+        "intent": "intent_user_issue",
+        "entities": []
+      },
+      {
+        "text": "can you give access to a user",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "give",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "her id is 8556996",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 10,
+            "end": 17,
+            "value": "8556996",
+            "entity": "username"
+          }
+        ]
+      },
+      {
+        "text": "643004606",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "643004606",
+            "entity": "username"
+          }
+        ]
+      },
+      {
+        "text": "girija prasad(856693)",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 14,
+            "end": 20,
+            "value": "856693",
+            "entity": "username"
+          }
+        ]
+      },
+      {
+        "text": "can you help me",
+        "intent": "intent_user_issue",
+        "entities": []
+      },
+      {
+        "text": "can you activate samatha 829001 ?",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 25,
+            "end": 31,
+            "value": "829001",
+            "entity": "username"
+          },
+          {
+            "start": 8,
+            "end": 16,
+            "value": "activate",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "please add access for 7399928",
+        "intent": "intent_user_issue",
+        "entities": [
+          {
+            "start": 22,
+            "end": 29,
+            "value": "7399928",
+            "entity": "username"
+          },
+          {
+            "start": 7,
+            "end": 10,
+            "value": "add",
+            "entity": "actiontype"
+          }
+        ]
+      },
+      {
+        "text": "Thank You very much!",
+        "intent": "intent_thanks",
+        "entities": []
+      },
+      {
+        "text": "thanks buddy",
+        "intent": "intent_thanks",
+        "entities": []
+      },
+      {
+        "text": "great thank you",
+        "intent": "intent_thanks",
+        "entities": []
+      },
+      {
+        "text": "great job",
+        "intent": "intent_thanks",
+        "entities": []
+      },
+      {
+        "text": "good job buddy",
+        "intent": "intent_thanks",
+        "entities": []
+      },
+      {
+        "text": "i appreciate your help",
+        "intent": "intent_thanks",
+        "entities": []
+      },
+      {
+        "text": "thanks",
+        "intent": "intent_thanks",
+        "entities": []
+      },
+      {
+        "text": "than you",
+        "intent": "intent_thanks",
+        "entities": []
+      },
+      {
+        "text": "excellent",
+        "intent": "intent_thanks",
+        "entities": []
+      },
+      {
+        "text": "excellent job",
+        "intent": "intent_thanks",
+        "entities": []
+      },
+      {
+        "text": "you are great",
+        "intent": "intent_thanks",
+        "entities": []
+      },
+      {
+        "text": "excellent thank you",
+        "intent": "intent_thanks",
+        "entities": []
+      },
+      {
+        "text": "thanks for your help",
+        "intent": "intent_thanks",
+        "entities": []
+      },
+      {
+        "text": "cool thanks",
+        "intent": "intent_thanks",
+        "entities": []
+      },
+      {
+        "text": "well done",
+        "intent": "intent_thanks",
+        "entities": []
+      }
+    ],
+    "entity_synonyms": [
+      {
+        "value": "activate",
+        "synonyms": [
+          "activated",
+          "activating",
+          "enable",
+          "give",
+          "grant",
+          "add",
+          "turn on",
+          "on",
+          "switch on"
+        ]
+      },
+      {
+        "value": "deactivate",
+        "synonyms": [
+          "deactivated",
+          "disable",
+          "revoke",
+          "remove",
+          "turn off",
+          "off",
+          "switch off"
+        ]
+      }
+    ]
+  }
+}
