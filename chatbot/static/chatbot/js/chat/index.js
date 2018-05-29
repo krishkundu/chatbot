@@ -104,15 +104,15 @@ function fire_ajax_submit_chat(chatText) {
             
             for(b in resp_arr){
             	
-            	console.log(">>>>>>>>"+resp_arr[b]);
-            	console.log(">>>>>>>>"+b);
+            	console.log(">>>>>>>>111"+resp_arr[b].recipient_id);
+            	console.log(">>>>>>>>111"+resp_arr[b].text);
             }
             //delay_bot_response();
             //setTimeout(display_response(resp_arr),5000);
         	//bot response
         	
         	for(a in resp_arr){
-        		var txt = resp_arr[a];
+        		var txt = resp_arr[a].text;
         		console.log(">>>>>>>>Text1 "+txt);
         		console.log(">>>>>>>>a "+a);
         		if(a == 0){

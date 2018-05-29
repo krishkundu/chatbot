@@ -1,4 +1,5 @@
-{
-  "language": "en",
-  "pipeline": "spacy_sklearn"
-}
+language: "en"
+
+pipeline:
+- name: "nlp_spacy"
+  model: "en"

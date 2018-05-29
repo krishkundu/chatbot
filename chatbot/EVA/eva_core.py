@@ -7,10 +7,12 @@ Created on 20-May-2018
 import os
 
 #NLU Imports
-from rasa_nlu.config import RasaNLUConfig
-from rasa_nlu.converters import load_data #remember this
+from rasa_nlu.config import RasaNLUModelConfig
+from rasa_nlu.training_data import load_data #remember this
 from rasa_nlu.components import ComponentBuilder
 from rasa_nlu.model import Trainer
+from rasa_nlu import config
+
 
 #Core imports
 from rasa_core.channels.console import ConsoleInputChannel
@@ -33,7 +35,8 @@ def train_nlu_mode(
     builder = ComponentBuilder(use_cache=True)
     
     training_data = load_data(add_cur_dir(nlu_train_file))
-    trainer = Trainer(RasaNLUConfig(add_cur_dir(nlu_config_file)), builder)
+    #trainer = Trainer(RasaNLUModelConfig(add_cur_dir(nlu_config_file)), builder)
+    trainer = Trainer(config.load(add_cur_dir(nlu_config_file)), builder)
     
     trainer.train(training_data)
     
@@ -66,24 +69,25 @@ def get_nlu_agent(
         return agent
     else:
         print("Training Agent")
-        agent = Agent(domain_file, policies=[MemoizationPolicy(),KerasPolicy()],
+        agent = Agent(add_cur_dir("/"+domain_file), policies=[MemoizationPolicy(max_history=3),KerasPolicy()],
                                             interpreter=interpreter
                                             )
+        training_data = agent.load_data(add_cur_dir("/"+training_data_file))
         if mode == "OFFLINE":
             agent.train(
-                    training_data_file,
-                    augmentation_factor = 50,
-                    max_history = 4,
+                    training_data,
+                    #augmentation_factor = 50,
+                    #max_history = 4, feature disabled
                     epochs = 100,
                     batch_size = 20,
                     validation_split = 0.2
             )
         
         else:
-            agent.train_online(training_data_file,
+            agent.train_online(training_data,
                              ConsoleInputChannel(),
-                             augmentation_factor = 50,
-                             max_history = 4,
+                             #augmentation_factor = 50,
+                             #max_history = 4,
                              epochs = 100,
                              batch_size = 50,
                              validation_split = 0.2

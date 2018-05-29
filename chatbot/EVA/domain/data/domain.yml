@@ -21,7 +21,7 @@ entities:
 actions:
 - utter_greet
 - utter_goodbye
-- eva_actions.ActionOnUser
+- EVA.eva_actions.ActionOnUser
 - utter_ask_username
 - utter_ask_actiontype
 - utter_ask_confirm
