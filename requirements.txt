@@ -82,7 +82,7 @@ python-dateutil==2.6.1
 python-telegram-bot==10.1.0
 python-twitter==3.4.1
 pytz==2018.4
-PyYAML==3.12
+PyYAML==5.4
 rasa-core==0.9.1
 rasa-nlu==0.12.3
 redis==2.10.6
